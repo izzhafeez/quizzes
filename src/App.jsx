@@ -1,14 +1,17 @@
-import quizzes from 'data/info/quizzes';
+import { Route, Routes } from 'react-router';
 import './App.css';
-import GeoQuiz from 'components/quiz/GeoQuiz';
+import quizTypes from 'data/info/quizTypes';
 
 const App = () => {
-  const { key, name, data, getText, getStyle, getColor } = quizzes[0];
-  return (
-    <div className="App">
-      {GeoQuiz({ data, getText, getStyle, getColor })}
-    </div>
-  );
+  return <Routes>
+    {quizTypes.map(type => type.quizzes.map(quiz =>
+      <Route
+        key={`${type.key}-${quiz.key}`}
+        path={`/${type.key}/${quiz.key}`}
+        element={type.format(quiz)}
+      />
+    ))}
+  </Routes>
 }
 
 export default App;
