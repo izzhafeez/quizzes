@@ -1,20 +1,23 @@
 import unidecode from "unidecode";
 
-const purify = text => {
+export const purifyGuess = text => {
   const unascii = unidecode(text);
   return unascii
     .replaceAll(' ', '')
     .toLowerCase()
     .replace(/__.*/gi, '')
-    .replace(/[^0-9a-z]/gi, '')
+    .replace(/[^0-9a-z]/gi, '');
+}
+
+export const purifySchool = text => {
+ return purifyGuess(text)
     .replace('school', '')
     .replace('saint', 'st');
 };
 
-
-export const purifyUnder = text => {
+const purifyBasic = text => {
   const unascii = unidecode(text);
   return unascii.replace(/__.*/gi, '');
 }
 
-export default purify;
+export default purifyBasic;
