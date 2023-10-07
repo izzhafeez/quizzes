@@ -1,5 +1,6 @@
-const handleGuess = ({ setRecenter, setCompleted, setCorrect, setFeatures, handleGiveUp, completed, itemPositions, correct, features, purifyGuess }) => event => {
-  setRecenter(false);
+import setFeature from "./setFeature";
+
+const handleGuess = ({ setCompleted, setCorrect, setFeatures, handleGiveUp, completed, itemPositions, correct, features, purifyGuess }) => event => {
   const guess = purifyGuess(event.target.value);
   const positionsToChange = itemPositions[guess];
   if (!positionsToChange) {
@@ -15,17 +16,16 @@ const handleGuess = ({ setRecenter, setCompleted, setCorrect, setFeatures, handl
   
   const totalCorrect = correct + positionsToChange.length;
   setCorrect(totalCorrect);
-  setFeatures(features.map((f, i) => {
+  setFeatures(features.map((feature, i) => {
     if (positionsToChange.includes(i)) {
-      f.set('isAnswered', true);
-      f.setStyle(f.get('style'));
+      setFeature(feature);
     }
-    return f;
+    return feature;
   }));
 
   event.target.value = '';
   if (totalCorrect === features.length) {
-    handleGiveUp(true)();
+    handleGiveUp()();
   }
 };
 
