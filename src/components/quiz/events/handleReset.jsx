@@ -1,8 +1,10 @@
-const handleReset = ({ setCorrect, setCompleted, setGrade, setRecenter }) => {
+import resetFeature from "./resetFeature";
+
+const handleReset = ({ setCorrect, setCompleted, setGrade, setFeatures, features }) => {
   setCorrect(0);
   setCompleted({});
   setGrade('');
-  setRecenter(true);
+  setFeatures(features.map(resetFeature));
 };
 
 export default handleReset;
