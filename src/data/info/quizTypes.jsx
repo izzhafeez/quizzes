@@ -4,7 +4,7 @@ import geoQuizzes from './geoQuizzes';
 const quizTypes = [
   {
     key: 'geo-quiz',
-    format: GeoQuiz,
+    format: (props) => <GeoQuiz {...props}/>,
     quizzes: geoQuizzes
   }
 ];
