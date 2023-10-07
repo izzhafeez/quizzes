@@ -1,13 +1,9 @@
 import getGrade from "../helper/getGrade";
 
-const handleGiveUp = ({ setCompleted, setGrade, setFeatures, itemPositions, correct, features }) => () => {
+const handleGiveUp = ({ setCompleted, setGrade, setFeatures, itemPositions, correct, allFeatures }) => () => {
   setCompleted(itemPositions);
-  setGrade(getGrade(correct/features.length));
-  setFeatures(features.map(feature => {
-    feature.set('isAnswered', true);
-    feature.setStyle(feature.get('style'));
-    return feature;
-  }));
+  setGrade(getGrade(correct/allFeatures.length));
+  setFeatures(allFeatures);
 };
 
 export default handleGiveUp;
