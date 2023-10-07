@@ -8,7 +8,7 @@ import handlePointerMove from './handlePointerMove';
 import { useGeographic } from 'ol/proj';
 
 // code from https://taylor.callsen.me/using-openlayers-with-react-functional-components/
-const MapContainer = ({ features, withOverlay=true, willRecenter=true }) => {
+const MapContainer = ({ features, withOverlay=true }) => {
   useGeographic();
 
   // set intial state - used to track references to OpenLayers 
@@ -58,19 +58,8 @@ const MapContainer = ({ features, withOverlay=true, willRecenter=true }) => {
           features: features // make sure features is an array
         })
       );
-
-      // fit map to feature extent (with 100px of padding)
-      const extent = featuresLayer.getSource().getExtent();
-      const view = map.getView();
-
-      // Set the view's extent and resolution
-      if (willRecenter) {
-        view.fit(extent, {
-          padding: [100, 100, 100, 100],
-        });
-      }
     }
-  }, [features, map, featuresLayer, overlay, willRecenter, withOverlay]);
+  }, [features, map, featuresLayer, overlay, withOverlay]);
 
   return <div ref={mapElement} className='map-container'/>
 }
