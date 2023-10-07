@@ -373,9 +373,45 @@
   },
   "Bright Hill__CR13": {
     "title": "Bright Hill__CR13",
-    "latitude": 1.361667,
-    "longitude": 103.832222,
+    "latitude": 1.3631844,
+    "longitude": 103.8330215,
     "label": "CR13"
+  },
+  "Turf City": {
+    "title": "Turf City",
+    "latitude": 1.3406034,
+    "longitude": 103.7935369,
+    "label": "CR14"
+  },
+  "King Albert Park__CR15": {
+    "title": "King Albert Park__CR15",
+    "latitude": 1.3355556,
+    "longitude": 103.7838889,
+    "label": "CR15"
+  },
+  "Maju": {
+    "title": "Maju",
+    "latitude": 1.3272925,
+    "longitude": 103.7761483,
+    "label": "CR16"
+  },
+  "Clementi__CR17": {
+    "title": "Clementi__CR17",
+    "latitude": 1.315303,
+    "longitude": 103.765244,
+    "label": "CR17"
+  },
+  "West Coast": {
+    "title": "West Coast",
+    "latitude": 1.3103669,
+    "longitude": 103.7577269,
+    "label": "CR18"
+  },
+  "Jurong Lake District": {
+    "title": "Jurong Lake District",
+    "latitude": 1.3272604,
+    "longitude": 103.7391875,
+    "label": "CR19"
   },
   "Aviation Park": {
     "title": "Aviation Park",
@@ -629,8 +665,8 @@
     "longitude": 103.775833,
     "label": "DT5"
   },
-  "King Albert Park": {
-    "title": "King Albert Park",
+  "King Albert Park__DT6": {
+    "title": "King Albert Park__DT6",
     "latitude": 1.335556,
     "longitude": 103.783889,
     "label": "DT6"
@@ -743,8 +779,8 @@
     "longitude": 103.778658,
     "label": "EW22"
   },
-  "Clementi": {
-    "title": "Clementi",
+  "Clementi__EW23": {
+    "title": "Clementi__EW23",
     "latitude": 1.315303,
     "longitude": 103.765244,
     "label": "EW23"
@@ -793,8 +829,8 @@
   },
   "Gul Circle": {
     "title": "Gul Circle",
-    "latitude": 1.3212,
-    "longitude": 103.6657,
+    "latitude": 1.3196018,
+    "longitude": 103.6607218,
     "label": "EW30"
   },
   "Tuas Crescent": {
@@ -919,8 +955,8 @@
   },
   "Choa Chu Kang West": {
     "title": "Choa Chu Kang West",
-    "latitude": 1.3791,
-    "longitude": 103.737821,
+    "latitude": 1.3791803,
+    "longitude": 103.7400041,
     "label": "JS2"
   },
   "Tengah__JS3": {
@@ -1285,8 +1321,8 @@
   },
   "Cove": {
     "title": "Cove",
-    "latitude": 1.398111,
-    "longitude": 103.905725,
+    "latitude": 1.3994411,
+    "longitude": 103.9058269,
     "label": "PE1"
   },
   "Meridian": {
@@ -1417,38 +1453,38 @@
   },
   "Farmway": {
     "title": "Farmway",
-    "latitude": 1.398978,
-    "longitude": 103.888911,
+    "latitude": 1.3971866,
+    "longitude": 103.8892115,
     "label": "SW2"
   },
   "Kupang": {
     "title": "Kupang",
-    "latitude": 1.399228,
-    "longitude": 103.881319,
+    "latitude": 1.3981981,
+    "longitude": 103.8812872,
     "label": "SW3"
   },
   "Thanggam": {
     "title": "Thanggam",
-    "latitude": 1.399356,
-    "longitude": 103.874794,
+    "latitude": 1.3972212,
+    "longitude": 103.8755883,
     "label": "SW4"
   },
   "Fernvale": {
     "title": "Fernvale",
-    "latitude": 1.393208,
-    "longitude": 103.876303,
+    "latitude": 1.3918354,
+    "longitude": 103.8762706,
     "label": "SW5"
   },
   "Layar": {
     "title": "Layar",
-    "latitude": 1.394025,
-    "longitude": 103.879753,
+    "latitude": 1.392148,
+    "longitude": 103.8799888,
     "label": "SW6"
   },
   "Tongkang": {
     "title": "Tongkang",
-    "latitude": 1.391078,
-    "longitude": 103.885772,
+    "latitude": 1.3893188,
+    "longitude": 103.8859224,
     "label": "SW7"
   },
   "Renjong": {
@@ -1633,8 +1669,8 @@
   },
   "Bright Hill__TE7": {
     "title": "Bright Hill__TE7",
-    "latitude": 1.361667,
-    "longitude": 103.832222,
+    "latitude": 1.3631844,
+    "longitude": 103.8330215,
     "label": "TE7"
   },
   "Upper Thomson": {
